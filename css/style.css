@@ -1,0 +1,131 @@
+@charset "utf-8";
+/*font*/
+@import url("https://fonts.googleapis.com/css2?family=New+Amsterdam&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jersey+10&family=New+Amsterdam&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+@import "reset.css";
+
+:root {
+  --rgba: rgba(0, 0, 0, 0.5);
+}
+body {
+  font-family: "Nunito", sans-serif;
+  background-color: beige;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0px;
+}
+
+.hidden {
+  display: none;
+}
+
+#clock {
+  height: 30%;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  mix-blend-mode: overlay;
+  text-align: center;
+  font-size: 80px;
+}
+
+input {
+  text-align: center;
+  border: none;
+  background: transparent;
+  border: 0;
+  border-style: none;
+  border-collapse: collapse;
+  font-size: 20px;
+  color: white;
+  padding-bottom: 5px;
+}
+
+input::placeholder {
+  color: white;
+  font-weight: 600;
+}
+
+input:focus {
+  outline: none;
+}
+#login-form,
+#todo-form,
+#greeting {
+  margin: 1% 0;
+}
+#login-form > button {
+  background-color: var(--rgba);
+  border-style: none;
+  border-radius: 25px;
+  padding: 10px 15px;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+#greeting {
+  font-size: 50px;
+  font-weight: 700;
+  color: white;
+  margin: 10px 0px;
+}
+
+#todo-form {
+  margin: 10px 0px;
+}
+
+#todo-form input {
+  width: 300px;
+}
+
+#todo-list {
+  width: 300px;
+  height: 40%;
+  overflow: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--rgba);
+  border-radius: 15px;
+  color: white;
+  font-weight: 500;
+  box-shadow: 0px 0px 10px;
+  padding: 0px;
+  margin: 1% 0;
+}
+
+#todo-list::-webkit-scrollar {
+  display: none;
+}
+
+#todo-list > li {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+  padding: 2px;
+}
+
+#todo-list > li button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-weight: 900;
+}
+
+#quote,
+#weather {
+  text-align: center;
+  color: white;
+}
+
+#quote {
+  margin: 1% 0;
+}
